@@ -6,7 +6,7 @@ import logo from 'C:/Users/Home/Desktop/programming/SE/SE-67/frontend/public/log
 import cart from 'C:/Users/Home/Desktop/programming/SE/SE-67/frontend/src/assets/cart.png';
 import ect from 'C:/Users/Home/Desktop/programming/SE/SE-67/frontend/src/assets/ect.png';
 /*import { GetUsersById, UpdateStatusWriterById } from '../../services/https/User/user';*/
-import { UsersInterface } from '../../interface/profile_interface/IProfile';
+/*import { UsersInterface } from '../../interface/profile_interface/IProfile';*/
 import { IoPersonCircleOutline } from "react-icons/io5";
 import Stock2 from '../pages/Stock2';
 

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import styled from 'styled-components';
 import Header from '../components/header';
 import p1 from '../assets/sofa.jpg';
@@ -18,6 +19,20 @@ const ProductGrid = styled.div`
 `;
 
 const Stock1: React.FC = () => {
+  
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        // เรียก API เพื่อดึงข้อมูลสินค้า
+        axios.get("http://localhost:8000/products")
+            .then((response) => {
+                setProducts(response.data);
+            })
+            .catch((error) => {
+                console.error("Error fetching products:", error);
+            });
+    }, []);
+
   return (
     <div>
       <Header />

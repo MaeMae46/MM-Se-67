@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from '../components/header';
 import p1 from '../assets/sofa.jpg';
@@ -12,6 +13,10 @@ import '../components/card3.css';
 
 
 const Stock3: React.FC = () => {
+  const navigate = useNavigate();
+    const handleNext4Click =() => {
+      navigate("/Stock4");
+    }
   return (
     <div>
       <Header />
@@ -43,16 +48,16 @@ const Stock3: React.FC = () => {
   </div>
 
   {/* การ์ดเพิ่มภาพ */}
+  <button onClick={handleNext4Click}>
   <div className="card4">
-  <a href="/Stock4">
   <div className="card add-card4">
     <div className="add-image4">
       <span>+</span>
     </div>
   </div>
-  </a>
   <h3 className="card-title4"></h3>
   </div>
+  </button>
 </div>
 
         
